@@ -1,0 +1,9 @@
+{
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "defaultCommandTimeout": 16000,
+  "pageLoadTimeout" : 120000,
+  "requestTimeout" : 15000,
+  "responseTimeout" : 60000,
+  "chromeWebSecurity": false
+}

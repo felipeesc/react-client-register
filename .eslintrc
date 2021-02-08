@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:react-hooks/recommended",
+    "plugin:cypress/recommended",
+    "plugin:testing-library/react"
+  ],
+  "plugins": [
+    "prettier",
+    "import",
+    "react-hooks",
+    "cypress",
+    "testing-library"
+  ],
+  "rules": {
+    "strict": 0,
+    "prettier/prettier": "error",
+    "node/no-unsupported-features/es-syntax": "off",
+    "no-console": "off",
+    "no-shadow": "off",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading":"off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-no-duplicate-props": [1, { "ignoreCase": false }],
+    "react/jsx-filename-extension": [1, { "extensions": [".test.js", ".jsx"] }],
+    "no-unneeded-ternary":  ["error", { "defaultAssignment": true }],
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "localStorage": "readonly",
+    "window": "readonly",
+    "document": "readonly",
+    "screen": "readonly"
+  },
+  "env": {
+    "jest": "true",
+    "cypress/globals": true
+  }
+}
